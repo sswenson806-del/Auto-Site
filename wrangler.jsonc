@@ -1,6 +1,6 @@
 {
   // Cloudflare Workers static-assets deploy. Same Worker name = same URL:
-  // https://example-ridgeline-auto.sswenson806-del.workers.dev
+  // https://example-ridgeline-auto.moplogic.workers.dev
   "name": "example-ridgeline-auto",
   "compatibility_date": "2026-11-01",
   "workers_dev": true,

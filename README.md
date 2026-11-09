@@ -3,7 +3,7 @@
 Example sales demo for Swenson Digital. Fictional business, labeled as an example on every page,
 hidden from search engines, and its quote form is demo-only (nothing is sent or stored).
 
-Live: https://example-ridgeline-auto.sswenson806-del.workers.dev
+Live: https://example-ridgeline-auto.moplogic.workers.dev
 
 ## What's in here
 
