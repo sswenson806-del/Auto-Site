@@ -1,0 +1,14 @@
+/* Generated from the client config (brand.colors). Edit the config, not this file. */
+:root {
+  --c-primary: #24508F;
+  --c-primary-ink: #FFFFFF;
+  --c-accent: #F2C230;
+  --c-accent-ink: #1A1E23;
+  --c-bg: #EEF0F2;
+  --c-surface: #FFFFFF;
+  --c-text: #1A1E23;
+  --c-muted: #4C5560;
+  --c-line: #D2D6DB;
+  --c-dark: #1E2329;
+  --c-dark-ink: #FFFFFF;
+}

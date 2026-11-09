@@ -1,0 +1,5 @@
+site=demo-auto
+template=automotive
+kind=example
+source=412991d
+config=5e08cb4996b9

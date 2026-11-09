@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img"><title>After. Placeholder illustration. Replace with a real photo.</title>
+    <rect width="1200" height="800" fill="#D7DBE0"/>
+    <rect y="600" width="1200" height="200" fill="#9EA5AE"/>
+    <path d="M0 600h1200" stroke="#7E868F" stroke-width="6"/>
+    <path d="M140 640h220M500 640h220M860 640h220" stroke="#F2C230" stroke-width="10" stroke-dasharray="36 22"/>
+    <path d="M190 520 C200 440 250 420 330 410 L440 300 C470 272 520 262 600 262 L760 262 C830 262 870 290 920 350 L1000 410 C1050 420 1070 450 1070 520 L1070 545 L190 545z" fill="#24508F"/>
+    <path d="M470 312 L610 284 L620 400 L420 400z" fill="#2F3A47"/><path d="M640 282 L760 282 C800 284 830 305 870 360 L880 400 L650 400z" fill="#2F3A47"/>
+    <rect x="190" y="500" width="880" height="20" fill="#000" opacity=".18"/>
+    <path d="M300 405 C480 380 700 380 960 410" stroke="#fff" stroke-opacity=".55" stroke-width="10" fill="none" stroke-linecap="round"/>
+       <path d="M470 300 L560 265" stroke="#fff" stroke-opacity=".6" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="360" cy="548" r="78" fill="#1B1E22"/><circle cx="360" cy="548" r="40" fill="#C9CED4"/>
+    <circle cx="900" cy="548" r="78" fill="#1B1E22"/><circle cx="900" cy="548" r="40" fill="#C9CED4"/>
+    
+  <g font-family="Inter, Arial, sans-serif" font-size="25" font-weight="600">
+    <rect x="30" y="733.8461538461538" width="866.0000000000001" height="46.15384615384615" rx="7.5" fill="#000" fill-opacity=".55"/>
+    <text x="50" y="766.2785862785862" fill="#fff">After. Placeholder illustration. Replace with a real photo.</text>
+  </g></svg>

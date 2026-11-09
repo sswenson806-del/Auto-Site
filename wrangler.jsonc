@@ -1,0 +1,9 @@
+{
+  // Cloudflare Workers static-assets deploy. Same Worker name = same URL:
+  // https://example-ridgeline-auto.sswenson806-del.workers.dev
+  "name": "example-ridgeline-auto",
+  "compatibility_date": "2026-11-01",
+  "workers_dev": true,
+  "preview_urls": false,
+  "assets": { "directory": "./public", "not_found_handling": "404-page" }
+}

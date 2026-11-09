@@ -1,0 +1,93 @@
+/* Automotive theme: "service bay". Graphite + signal yellow + steel blue, Poppins headlines,
+   squared-off shapes, the service-ticket card as the signature element. */
+@font-face { font-family: "Poppins"; src: url(../fonts/poppins-600.woff) format("woff"); font-weight: 500 600; font-display: swap; }
+@font-face { font-family: "Poppins"; src: url(../fonts/poppins-700.woff) format("woff"); font-weight: 700; font-display: swap; }
+@font-face { font-family: "Inter"; src: url(../fonts/inter-400.woff) format("woff"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Inter"; src: url(../fonts/inter-600.woff) format("woff"); font-weight: 500 600; font-display: swap; }
+@font-face { font-family: "Inter"; src: url(../fonts/inter-700.woff) format("woff"); font-weight: 700; font-display: swap; }
+
+:root {
+  --font-display: "Poppins", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --display-weight: 700;
+  --display-tracking: -.02em;
+  --radius: 6px;
+  --radius-lg: 8px;
+  --radius-btn: 6px;
+  --radius-mark: 6px;
+  --c-header-bg: var(--c-dark);
+  --c-header-ink: var(--c-dark-ink);
+  --c-header-line: #343B44;
+  --c-header-muted: #AEB5BE;
+  --c-footer-bg: var(--c-dark);
+  --c-cta-bg: var(--c-accent);
+  --c-cta-ink: var(--c-accent-ink);
+  --c-bar-bg: var(--c-dark);
+  --c-notice-bg: #0F1215;
+  --c-icon-bg: var(--c-dark);
+  --c-icon-ink: var(--c-accent);
+  --c-step-bg: var(--c-accent);
+  --c-step-ink: var(--c-accent-ink);
+  --c-focus: var(--c-primary);
+  --c-intro-bg: var(--c-dark);
+  --c-intro-ink: var(--c-dark-ink);
+  --c-intro-muted: #C3C9D0;
+  --c-line-strong: #A9B0B8;
+}
+.brand .mark { background: var(--c-accent); color: var(--c-accent-ink); }
+.site-header .site-nav { color: var(--c-dark-ink); }
+@media (max-width: 960px) { .site-nav { background: var(--c-dark); } }
+.page-intro .kicker { color: var(--c-accent); }
+.cta-band .btn-accent { background: var(--c-dark); color: var(--c-dark-ink); }
+
+/* Hero */
+.au-hero { position: relative; background: radial-gradient(ellipse 60% 80% at 85% 20%, color-mix(in srgb, var(--c-primary) 45%, transparent), transparent 70%), var(--c-dark); color: var(--c-dark-ink); overflow: hidden; }
+.au-hero::before { content: ""; position: absolute; inset: auto 0 0 0; height: 10px; background: repeating-linear-gradient(-45deg, var(--c-accent) 0 18px, var(--c-dark) 18px 36px); z-index: 2; }
+.au-hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(320px, .9fr); gap: clamp(2rem, 5vw, 4.5rem); align-items: start; padding-top: clamp(2.5rem, 6vw, 5rem); padding-bottom: clamp(3.5rem, 7vw, 6rem); }
+.au-hero h1 { color: inherit; font-size: clamp(2.4rem, 5.5vw, 4.4rem); line-height: 1.02; max-width: 12ch; }
+.au-tagline { color: var(--c-accent); font-weight: 600; margin-bottom: 1rem; }
+.au-sub { font-size: clamp(1.1rem, 1.5vw, 1.25rem); color: #D6DBE0; max-width: 48ch; }
+.au-promise { list-style: none; padding: 0; margin: 1.5rem 0 0; display: grid; gap: .5rem; font-weight: 500; }
+.au-promise li { display: flex; gap: .5rem; align-items: center; }
+.au-promise .icon { color: var(--c-accent); }
+@media (max-width: 900px) {
+  .au-hero-grid { grid-template-columns: 1fr; }
+  .au-hero h1 { max-width: none; }
+}
+
+/* Signature: the service ticket */
+.ticket { background: #fff; color: var(--c-text); border-radius: 8px 8px 0 0; box-shadow: 0 24px 50px -20px rgba(0,0,0,.6); position: relative; }
+.ticket::after { content: ""; position: absolute; left: 0; right: 0; bottom: -9px; height: 18px; background: radial-gradient(circle at 9px 0, transparent 8px, #fff 8.5px) 0 0 / 18px 18px repeat-x; }
+.ticket-head { padding: 1.25rem 1.5rem 1rem; border-bottom: 2px dashed var(--c-line); display: grid; gap: .5rem; }
+.ticket-title { display: flex; align-items: center; gap: .5rem; font: 700 1.15rem/1.2 var(--font-display); margin: 0; }
+.ticket-title .icon { color: var(--c-primary); }
+.ticket .open-status { font-size: .95rem; }
+.ticket-lines { list-style: none; margin: 0; padding: .5rem 1.5rem; }
+.ticket-lines li { display: flex; justify-content: space-between; gap: 1rem; padding: .75rem 0; border-bottom: 1px solid var(--c-line); font-weight: 600; }
+.ticket-count { color: var(--c-muted); font-weight: 500; text-align: right; font-variant-numeric: tabular-nums; }
+.ticket-foot { padding: 1.25rem 1.5rem 1.6rem; display: grid; gap: .6rem; }
+.ticket-foot .btn-ghost { color: var(--c-primary); }
+.ticket-note { font-size: .85rem; color: var(--c-muted); margin: .25rem 0 0; }
+
+/* Categories */
+.cat-block + .cat-block { margin-top: clamp(3rem, 7vw, 5rem); }
+.cat-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 1rem 3rem; align-items: end; margin-bottom: 1.75rem; padding-bottom: 1rem; border-bottom: 3px solid var(--c-dark); }
+.cat-head h2, .cat-head p { margin: 0; }
+@media (max-width: 760px) { .cat-head { grid-template-columns: 1fr; } }
+.tpl-automotive .service-card { border-radius: var(--radius-lg); border-left: 4px solid var(--c-accent); }
+.tpl-automotive .service-icon { border-radius: 6px; }
+
+.au-dark { background: var(--c-dark); color: var(--c-dark-ink); }
+.au-dark h2, .au-dark h3 { color: inherit; }
+.au-dark .steps p { color: #C3C9D0; }
+.au-info { background: #E3E6EA; }
+.au-info-grid { display: grid; gap: 1.25rem; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.au-info-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 900px) { .au-info-grid, .au-info-2 { grid-template-columns: 1fr; } }
+.au-info .areas h3, .au-info .credentials h3 { font-size: 1rem; margin-top: 1rem; }
+.au-about-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: clamp(2rem, 5vw, 4rem); }
+@media (max-width: 800px) { .au-about-grid { grid-template-columns: 1fr; } }
+.page-intro { margin-bottom: clamp(1.5rem, 3vw, 2.5rem); }
+.call-big { width: 100%; }
+/* Keep the call button within thumb reach on the request page too */
+@media (max-width: 720px) { .tpl-automotive.page-contact .mobile-bar { display: grid; } .tpl-automotive.page-contact { padding-bottom: 76px; } }
