@@ -3,13 +3,13 @@
 Example sales demo for Swenson Digital. Fictional business, labeled as an example on every page,
 hidden from search engines, and its quote form is demo-only (nothing is sent or stored).
 
-Live: https://example-ridgeline-auto.moplogic.workers.dev
+Live: https://ridgelineauto.moplogic.workers.dev
 
 ## What's in here
 
 - `public/`: the finished site, ready to serve. It includes `_headers` (security headers and
   noindex) and `robots.txt` (blocks crawlers). Don't delete either one.
-- `wrangler.jsonc`: tells Cloudflare to serve `public/` from the Worker `example-ridgeline-auto`.
+- `wrangler.jsonc`: tells Cloudflare to serve `public/` from the Worker `ridgelineauto`.
 
 ## Don't edit `public/` by hand
 
@@ -20,7 +20,7 @@ To change the site, edit the master config or templates in Site Factory, follow 
 
 ## Deploying
 
-Connected to Cloudflare (Workers > example-ridgeline-auto > Settings > Build > connected repository): every push to
+Connected to Cloudflare (Workers > ridgelineauto > Settings > Build > connected repository): every push to
 `main` deploys automatically. By hand: `npx wrangler deploy` from this folder.
 
-Rollback: Cloudflare dashboard > Workers > example-ridgeline-auto > Deployments > Rollback, or `git revert` here and push.
+Rollback: Cloudflare dashboard > Workers > ridgelineauto > Deployments > Rollback, or `git revert` here and push.
